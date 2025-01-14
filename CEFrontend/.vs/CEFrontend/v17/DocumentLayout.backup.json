@@ -3,23 +3,74 @@
   "WorkspaceRootPath": "C:\\Users\\Evalynn Kootstra\\Documents\\GitHub\\CEFrontend\\Frontend\\CEFrontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|c:\\users\\evalynn kootstra\\documents\\github\\cefrontend\\frontend\\cefrontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|solutionrelative:src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|c:\\users\\evalynn kootstra\\documents\\github\\cefrontend\\frontend\\cefrontend\\src\\boxes.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|solutionrelative:src\\boxes.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|c:\\users\\evalynn kootstra\\documents\\github\\cefrontend\\frontend\\cefrontend\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|solutionrelative:src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|c:\\users\\evalynn kootstra\\documents\\github\\cefrontend\\frontend\\cefrontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|solutionrelative:src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|c:\\users\\evalynn kootstra\\documents\\github\\cefrontend\\frontend\\cefrontend\\src\\aliencard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|solutionrelative:src\\aliencard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|c:\\users\\evalynn kootstra\\documents\\github\\cefrontend\\frontend\\cefrontend\\src\\alienapi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D080560B-2B41-4E74-A818-6BFF53C9C2B9}|cefrontend.esproj|solutionrelative:src\\alienapi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 175,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlienCard.tsx",
+              "DocumentMoniker": "C:\\Users\\Evalynn Kootstra\\Documents\\GitHub\\CEFrontend\\Frontend\\CEFrontend\\src\\AlienCard.tsx",
+              "RelativeDocumentMoniker": "src\\AlienCard.tsx",
+              "ToolTip": "C:\\Users\\Evalynn Kootstra\\Documents\\GitHub\\CEFrontend\\Frontend\\CEFrontend\\src\\AlienCard.tsx",
+              "RelativeToolTip": "src\\AlienCard.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-14T14:47:02.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlienAPI.tsx",
+              "DocumentMoniker": "C:\\Users\\Evalynn Kootstra\\Documents\\GitHub\\CEFrontend\\Frontend\\CEFrontend\\src\\AlienAPI.tsx",
+              "RelativeDocumentMoniker": "src\\AlienAPI.tsx",
+              "ToolTip": "C:\\Users\\Evalynn Kootstra\\Documents\\GitHub\\CEFrontend\\Frontend\\CEFrontend\\src\\AlienAPI.tsx",
+              "RelativeToolTip": "src\\AlienAPI.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-14T13:48:53.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Boxes.tsx",
+              "DocumentMoniker": "C:\\Users\\Evalynn Kootstra\\Documents\\GitHub\\CEFrontend\\Frontend\\CEFrontend\\src\\Boxes.tsx",
+              "RelativeDocumentMoniker": "src\\Boxes.tsx",
+              "ToolTip": "C:\\Users\\Evalynn Kootstra\\Documents\\GitHub\\CEFrontend\\Frontend\\CEFrontend\\src\\Boxes.tsx",
+              "RelativeToolTip": "src\\Boxes.tsx",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADwAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-14T13:17:49.275Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,20 +79,20 @@
               "RelativeDocumentMoniker": "src\\main.tsx",
               "ToolTip": "C:\\Users\\Evalynn Kootstra\\Documents\\GitHub\\CEFrontend\\Frontend\\CEFrontend\\src\\main.tsx",
               "RelativeToolTip": "src\\main.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-11-21T20:17:14.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "App.tsx",
               "DocumentMoniker": "C:\\Users\\Evalynn Kootstra\\Documents\\GitHub\\CEFrontend\\Frontend\\CEFrontend\\src\\App.tsx",
               "RelativeDocumentMoniker": "src\\App.tsx",
               "ToolTip": "C:\\Users\\Evalynn Kootstra\\Documents\\GitHub\\CEFrontend\\Frontend\\CEFrontend\\src\\App.tsx",
               "RelativeToolTip": "src\\App.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-11-21T20:17:09.624Z",
               "EditorCaption": ""
