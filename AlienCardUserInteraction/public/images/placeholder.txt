@@ -1,0 +1,4 @@
+Place your alien card images here with the following names:
+- alien1.jpg
+- alien2.jpg
+- alien3.jpg 

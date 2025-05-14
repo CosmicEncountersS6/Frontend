@@ -1,0 +1,9 @@
+.logoImage{
+    width: 50%;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    align-content: center;
+}

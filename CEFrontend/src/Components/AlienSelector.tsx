@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { RandomizerAliens } from './AlienAPI';
+import { RandomizerAliens } from '../API/AlienAPI';
 import InfoCard from './AlienCard';
-import { Alien } from './AlienAPI';
+import { Alien } from '../API/AlienAPI';
 
 const NumberGenerator: React.FC = () => {
     const [easy, setEasy] = useState<number>(0);
