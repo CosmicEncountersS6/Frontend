@@ -2,7 +2,7 @@ export interface Card {
     id: string;
     name: string;
     imageUrl: string;
-    description: string;
+    description?: string;
 }
 
 export interface CardPosition {

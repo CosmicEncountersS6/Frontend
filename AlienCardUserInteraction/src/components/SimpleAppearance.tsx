@@ -19,17 +19,17 @@ export const SimpleAppearance: React.FC<SimpleAppearanceProps> = ({ card, onFlip
 
     return (
         <div style={{ 
-            padding: '20px',
+            padding: 'var(--spacing-unit)',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            minHeight: '500px'
+            minHeight: 'clamp(400px, 60vh, 600px)'
         }}>
             <motion.div
                 onClick={handleClick}
                 style={{
-                    width: '300px',
-                    height: '420px',
+                    width: 'var(--card-width)',
+                    height: 'var(--card-height)',
                     position: 'relative',
                     cursor: 'pointer',
                     transformStyle: 'preserve-3d',
@@ -83,20 +83,19 @@ export const SimpleAppearance: React.FC<SimpleAppearanceProps> = ({ card, onFlip
                             bottom: 0,
                             left: 0,
                             right: 0,
-                            padding: '20px',
+                            padding: 'clamp(15px, 3vw, 20px)',
                             background: 'linear-gradient(to top, rgba(0,0,0,0.9), transparent)',
                             color: 'white'
                         }}>
                             <h3 style={{ 
-                                margin: '0 0 8px 0',
-                                fontSize: '1.2em',
+                                marginBottom: 'clamp(4px, 1vw, 8px)',
+                                fontSize: 'clamp(16px, 3vw, 20px)',
                                 fontWeight: 600
                             }}>
                                 {card.name}
                             </h3>
                             <p style={{
-                                margin: 0,
-                                fontSize: '0.9em',
+                                fontSize: 'clamp(12px, 2vw, 14px)',
                                 opacity: 0.9,
                                 lineHeight: '1.4'
                             }}>
@@ -125,9 +124,10 @@ export const SimpleAppearance: React.FC<SimpleAppearanceProps> = ({ card, onFlip
                     <motion.div
                         style={{
                             color: 'white',
-                            fontSize: '1.2em',
+                            fontSize: 'clamp(16px, 3vw, 20px)',
                             textAlign: 'center',
-                            textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
+                            textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
+                            padding: 'var(--spacing-unit)'
                         }}
                         animate={{
                             scale: [0.95, 1, 0.95],

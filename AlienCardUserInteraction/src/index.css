@@ -6,24 +6,123 @@
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+:root {
+    /* Mobile-first card sizes */
+    --card-width: min(280px, 85vw);
+    --card-height: calc(var(--card-width) * 1.4);
+    --card-small-width: min(120px, 28vw);
+    --card-small-height: calc(var(--card-small-width) * 1.4);
+    --spacing-unit: clamp(8px, 2vw, 16px);
+    --button-height: clamp(36px, 8vw, 44px);
+}
+
 body {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #1a1a1a;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .card-container {
     perspective: 1000px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-unit);
 }
 
 button {
     font-weight: 500;
     transition: all 0.2s ease;
+    padding: 0 var(--spacing-unit);
+    height: var(--button-height);
+    font-size: clamp(13px, 3.5vw, 15px);
+    white-space: nowrap;
+    min-width: min(120px, 30vw);
 }
 
 button:hover {
     transform: scale(1.05);
     background-color: #3a3a3a !important;
+}
+
+/* Responsive utility classes */
+.responsive-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-unit);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-unit);
+}
+
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--card-small-width), 1fr));
+    gap: var(--spacing-unit);
+    width: 100%;
+    padding: calc(var(--spacing-unit) / 2);
+}
+
+.responsive-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--spacing-unit) / 2);
+    justify-content: center;
+    width: 100%;
+}
+
+/* Mobile-first media queries */
+@media (max-width: 768px) {
+    :root {
+        --spacing-unit: 8px;
+    }
+    
+    .responsive-container {
+        padding: 8px;
+    }
+
+    .responsive-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 8px;
+    }
+
+    button {
+        flex: 1 1 calc(50% - 8px);
+        max-width: calc(50% - 8px);
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --card-width: min(260px, 90vw);
+        --card-small-width: min(100px, 30vw);
+    }
+
+    button {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 2px 0;
+    }
+
+    .responsive-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    button:hover {
+        transform: none;
+    }
+
+    button:active {
+        transform: scale(0.98);
+        background-color: #3a3a3a !important;
+    }
 } 

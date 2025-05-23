@@ -33,13 +33,13 @@ export const SwipeCard: React.FC<SwipeCardProps> = ({ card, onSwipe }) => {
 
     return (
         <div style={{ 
-            padding: '20px',
+            padding: 'var(--spacing-unit)',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            minHeight: '100vh',
+            minHeight: 'clamp(400px, 60vh, 600px)',
             position: 'relative',
-            gap: '40px'
+            gap: 'clamp(20px, 5vw, 40px)'
         }}>
             {/* Main card area */}
             <div style={{
@@ -52,8 +52,8 @@ export const SwipeCard: React.FC<SwipeCardProps> = ({ card, onSwipe }) => {
                 {!isStarted ? (
                     <div style={{
                         position: 'relative',
-                        width: '300px',
-                        height: '420px',
+                        width: 'var(--card-width)',
+                        height: 'var(--card-height)',
                         cursor: 'pointer'
                     }} onClick={handleInitialClick}>
                         {/* Deck visualization */}
@@ -115,8 +115,8 @@ export const SwipeCard: React.FC<SwipeCardProps> = ({ card, onSwipe }) => {
                             key="active-card"
                             style={{
                                 position: 'relative',
-                                width: '300px',
-                                height: '420px',
+                                width: 'var(--card-width)',
+                                height: 'var(--card-height)',
                                 cursor: 'grab',
                                 perspective: '1000px'
                             }}
@@ -174,20 +174,20 @@ export const SwipeCard: React.FC<SwipeCardProps> = ({ card, onSwipe }) => {
                                     bottom: 0,
                                     left: 0,
                                     right: 0,
-                                    padding: '20px',
+                                    padding: 'clamp(15px, 3vw, 20px)',
                                     background: 'linear-gradient(to top, rgba(0,0,0,0.9), transparent)',
                                     color: 'white'
                                 }}>
                                     <h3 style={{ 
-                                        margin: '0 0 8px 0',
-                                        fontSize: '1.2em',
+                                        margin: '0 0 clamp(4px, 1vw, 8px) 0',
+                                        fontSize: 'clamp(16px, 3vw, 20px)',
                                         fontWeight: 600
                                     }}>
                                         {card.name}
                                     </h3>
                                     <p style={{
                                         margin: 0,
-                                        fontSize: '0.9em',
+                                        fontSize: 'clamp(12px, 2vw, 14px)',
                                         opacity: 0.9,
                                         lineHeight: '1.4'
                                     }}>
@@ -221,35 +221,28 @@ export const SwipeCard: React.FC<SwipeCardProps> = ({ card, onSwipe }) => {
             {revealedCards.length > 0 && (
                 <div style={{
                     width: '100%',
-                    padding: '20px',
+                    padding: 'var(--spacing-unit)',
                     background: 'rgba(0, 0, 0, 0.2)',
                     borderRadius: '10px',
                     marginTop: 'auto'
                 }}>
                     <h3 style={{
                         color: 'white',
-                        marginBottom: '15px',
-                        fontSize: '1.2em',
+                        marginBottom: 'clamp(10px, 3vw, 15px)',
+                        fontSize: 'clamp(16px, 3vw, 20px)',
                         textAlign: 'center'
                     }}>
                         Revealed Cards
                     </h3>
-                    <div style={{
-                        display: 'flex',
-                        gap: '15px',
-                        overflowX: 'auto',
-                        padding: '10px 0',
-                        WebkitOverflowScrolling: 'touch'
-                    }}>
+                    <div className="responsive-grid">
                         {revealedCards.map((revealedCard, index) => (
                             <motion.div
                                 key={index}
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 style={{
-                                    flexShrink: 0,
-                                    width: '150px',
-                                    height: '210px',
+                                    width: 'var(--card-small-width)',
+                                    height: 'var(--card-small-height)',
                                     borderRadius: '8px',
                                     overflow: 'hidden',
                                     position: 'relative',
@@ -270,13 +263,13 @@ export const SwipeCard: React.FC<SwipeCardProps> = ({ card, onSwipe }) => {
                                     bottom: 0,
                                     left: 0,
                                     right: 0,
-                                    padding: '8px',
+                                    padding: 'clamp(6px, 2vw, 8px)',
                                     background: 'linear-gradient(to top, rgba(0,0,0,0.9), transparent)',
                                     color: 'white'
                                 }}>
-                                    <div style={{
-                                        fontSize: '0.8em',
-                                        fontWeight: 600
+                                    <div style={{ 
+                                        fontSize: 'clamp(12px, 2vw, 14px)', 
+                                        fontWeight: 600 
                                     }}>
                                         {revealedCard.name}
                                     </div>
